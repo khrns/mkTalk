@@ -1,0 +1,13 @@
+% Show an overview slide before every section.
+\AtBeginSection[]{
+   \begin{frame}
+      \frametitle{Outline}
+      \begin{columns}
+         \begin{column}{.45\textwidth}
+            \tableofcontents[currentsection]  % TOC with highlighted section
+         \end{column}
+         \begin{column}{.55\textwidth}
+         \end{column}
+      \end{columns}
+   \end{frame}
+}

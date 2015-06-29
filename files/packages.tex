@@ -1,0 +1,99 @@
+% Matehmatical symbols, letters and extras.
+% See also:
+% http://ctan.org/pkg/amsmath
+% http://ctan.org/pkg/amsfonts
+% http://www.ctan.org/tex-archive/macros/latex/contrib/bbm
+\usepackage{amsmath, amsfonts, amssymb, bbm}
+
+% Insert ancient Greek text coded in Beta Code.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/betababel
+% (Extension of 'babel' (multilingual support for Plain TeX or LaTeX).
+% http://ctan.org/pkg/babel)
+\usepackage[english, greek]{betababel}
+
+% A new bookmark (outline) organization for hyperref.
+% https://www.ctan.org/pkg/bookmark
+\usepackage{bookmark}
+
+% Flexible handling of verbatim text including.
+% http://www.ctan.org/pkg/fancyvrb
+\usepackage{fancyvrb}
+
+% Improved interface for floating objects.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/float
+\usepackage{float}
+
+% Input encoding to be used (for German umlauts etc.).
+\usepackage[utf8]{inputenc}
+
+% Longtable to write tables that continue to the next page and more.
+% http://www.ctan.org/pkg/longtable
+\usepackage{longtable}
+
+% Highly configurable displaying of number and SI units.
+% http://ctan.org/pkg/siunitx
+\usepackage[%
+   per-mode=symbol,                % When using \per, use a slash as delimiter.
+   exponent-product=\cdot,         % When using 1eX notation, use \cdot as
+                                   % delimiter.
+   unit-optional-argument=true,    % Activate the optional argument usage for
+                                   % units, e.g.: \metre[10] -> 10 m
+   free-standing-units=true,       % The free-standing-units option controls
+                                   % whether the unit macros exist outside of
+                                   % the \si and \SI arguments.
+   use-xspace=true,                % Well, use xspace to set the space (after a
+                                   % unit) right.
+   number-unit-product = \text{~}, % Put a protected space between number and
+                                   % unit.
+   separate-uncertainty=true,      % Print a given uncertainty as a separate
+                                   % number (i.e. 3+-1 instead of 3(1)).
+   ]{siunitx}
+
+% Package to make slashed letters.
+\usepackage{slashed}
+
+% Automatic (correct) spacing for macros.
+% http://ctan.org/pkg/xspace
+\usepackage{xspace}
+   \xspaceaddexceptions{]\}}  % Do the brackets right.
+
+% Verbatim with URL-sensitive line breaks.
+% http://www.ctan.org/pkg/url
+\usepackage{url}
+
+% NON-italic Greek letters.
+\usepackage{upgreek}
+
+% Use Latin modern fonts:
+% (If you don't use it, you might need:
+%    \RequirePackage{fix-cm}
+% in front of \documentclass{...} to fix issues with Computer Modern fonts.)
+% http://www.ctan.org/tex-archive/info/lmodern
+\usepackage{lmodern}
+
+% Package to place pictures side by side.
+% http://www.ctan.org/pkg/subfig
+\usepackage[
+   caption=false, % If true, use the given settings for the 'caption' package.
+                  % If 'caption' package is loaded, use the settings given
+                  % there.
+   ]{subfig}
+
+% Create tabular cells spanning multiple rows.
+% 'multicolumn' is part of 'longtable'.
+% http://www.ctan.org/pkg/multirow
+\usepackage{multirow}
+
+% Intermix single and multiple columns.
+% https://www.ctan.org/pkg/multicol
+\usepackage{multicol}
+
+% https://www.ctan.org/pkg/pbox
+% A variable-width \parbox command.
+\usepackage{pbox}
+
+\renewcommand{\arraystretch}{1.1}                 %bigger line break in tables
+
+%\usepackage[symbol,bottom,flushmargin]{footmisc}  %adapt your footer
+%\usepackage[utf8x]{inputenc}                      %german umlauts etc.
+%\usepackage{ucs}                                  %unicode in latex

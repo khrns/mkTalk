@@ -1,0 +1,14 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands optimised for LaTeX Beamer presentations.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define the backup of the presentation.
+% Allows to count the backup slides 'correctly'.
+\newcommand{\backupbegin}{%
+   \newcounter{framenumberbeforeappendix}
+   \setcounter{framenumberbeforeappendix}{\value{framenumber}}
+   }
+\newcommand{\backupend}{%
+   \addtocounter{framenumberbeforeappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberbeforeappendix}}
+   }

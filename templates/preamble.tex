@@ -1,0 +1,43 @@
+\documentclass[%
+   hyperref={pdfpagelabels=false},  % Get rid of "pdfpagelabels" warnings.
+   usepdftitle=false,               % Get rid of "pdfauthor" warnings.
+   xcolor=dvipsnames,               % Use dvipsnames in the xcolor packages
+                                    % (loaded by beamer).
+   ]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set the style of the presentation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% No navigation symbols in footer.
+\beamertemplatenavigationsymbolsempty
+
+% Slide number in footer.
+\setbeamertemplate{footline}[frame number]
+
+% Set the theme.
+\usetheme{Frankfurt}
+
+% Set blocks to have round corners and a shadow.
+\useinnertheme[shadow=true]{rounded}
+
+% Set the color of the blocks etc.
+\setbeamercolor{structure}{fg=blue!25!black}
+
+% Set nicer font to be used in formulae:
+%\usefonttheme{professionalfonts}
+
+% Make overlay text transparent on unspecified slides, rather than invisible.
+\setbeamercovered{transparent}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Handle additional files
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Do nothing if files do not exist.
+\InputIfFileExists{files/packages}{}{}
+\InputIfFileExists{files/commands}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Details
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
